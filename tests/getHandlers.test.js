@@ -1,7 +1,7 @@
 // test for the status code
 test('check that the response status is 200 OK', async () => {
 	try {
-		const response = await fetch(`https://d8151e2e-e591-46f9-afda-706d385a2442.serverhub.tripleten-services.com/api/v1/warehouses`);
+		const response = await fetch(`https://f4b65519-5107-49fb-8ea3-08749740887a.serverhub.tripleten-services.com/api/v1/warehouses`);
 		expect(response.status).toBe(200);
 	} catch (error) {
 		console.error(error);
@@ -12,7 +12,7 @@ test('check that the response status is 200 OK', async () => {
 test('check that the response body contains the expected data', async () => {
 	try { 
 
-		const response = await fetch(`https://d8151e2e-e591-46f9-afda-706d385a2442.serverhub.tripleten-services.com/api/v1/warehouses`);
+		const response = await fetch(`https://f4b65519-5107-49fb-8ea3-08749740887a.serverhub.tripleten-services.com/api/v1/warehouses`);
 
 		const responseBody = await response.json();
 
