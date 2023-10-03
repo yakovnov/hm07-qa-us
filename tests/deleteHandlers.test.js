@@ -1,29 +1,33 @@
-// test for the status code
+//  DELETE Test 1 Status Code
 test('check that the response status is 200 OK', async () => {
 	try {
-		const response = await fetch(`https://f4b65519-5107-49fb-8ea3-08749740887a.serverhub.tripleten-services.com/api/v1/kits/7`);
-		expect(response.status).toBe(200);
+		const response = await fetch(`${config.API_URL}/api/v1/warehouses`);
 	} catch (error) {
 		console.error(error);
 	}
+	expect(response.status).toBe(200);
 });
 
 
 
 
-// test for body response
+//  DELETE Test 2 Response body
 
-test('the response body after deleting a kit is as expected', async () => {
-    try {
-		const response = await fetch(`https://f4b65519-5107-49fb-8ea3-08749740887a.serverhub.tripleten-services.com/api/v1/kits/7`, {
-			method: 'DELETE',
-		});
-		const responseBody = await response.json();
-		expect(responseBody).toEqual({
-			"ok": true
-		}
-		);
+test('checks that the response body after deleting a kit is as ok: true', async () => {
+	let responseBody;
+  
+	try {
+	  const response = await fetch(`${config.API_URL}/api/v1/kits/7`, {
+		method: 'DELETE',
+	  });
+	  responseBody = await response.json(); 
 	} catch (error) {
-		console.error(error);
+	  console.error(error);
 	}
-});
+  
+	
+	expect(responseBody).toEqual({
+	  "ok": true
+	});
+  });
+  
