@@ -4,4 +4,3 @@ After making changes in the files i executed the command 'git add -A' to stage t
 I used 'git commit -m Project 7 final result' to make a commit of the files in the stage area
 To add the modified files to the remote repository I used command "git push"
 
-All the tests were running by command "npx jest" from the hm07-qa-us folder
