@@ -1,3 +1,3 @@
 module.exports = {
-    API_URL: "https://98cdbf78-e9c5-4cc3-91bc-028a502f97dc.serverhub.tripleten-services.com"
+    API_URL: "https://8ca6fa8c-31cd-46a5-ab14-e04bdd8b0365.serverhub.tripleten-services.com"
 };

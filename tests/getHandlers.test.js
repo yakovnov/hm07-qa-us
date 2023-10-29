@@ -26,10 +26,11 @@ test('check that the response body contains the expected data', async () => {
           }
       },
       {
-          "name": "Fresh food",
+          "name": "Fresh Food",
           "workingHours": {
               "start": 8,
               "end": 23
+              // changed from "Fresh food" to "Fresh Food", hope i get you right 
           }
       },
       {
